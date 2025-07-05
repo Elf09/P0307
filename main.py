@@ -10,7 +10,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
 from google.oauth2.service_account import Credentials
 from openai import OpenAI
-from chatgpt_handler import handle_message
+from sheets_handler import get_table_data
 
 # Получаем токены из переменных среды
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
