@@ -1,0 +1,7 @@
+flask
+openai
+python-telegram-bot[fast]==20.8
+fastapi
+gspread
+google-auth
+uvicorn
