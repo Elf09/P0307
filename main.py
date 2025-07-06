@@ -10,8 +10,12 @@ from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandl
 from chatgpt_handler import generate_response
 import openai
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+# Получаем токены из переменных среды
+#TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_TOKEN ="8155930325:AAGSotTuTPQfznLNxg7GFzYyKY20iBSAo1A"
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+GOOGLE_CREDS_BASE64 = os.getenv("GOOGLE_CREDS_BASE64")
 
 openai.api_key = OPENAI_API_KEY
 
